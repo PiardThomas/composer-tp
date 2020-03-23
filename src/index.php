@@ -9,8 +9,6 @@ $logger->pushHandler(new StreamHandler(__DIR__ . '/../log/app.log', Logger::DEBU
 
 $logger->info('First message');
 $loader = new \Twig\Loader\FilesystemLoader('../templates');
-
-$loader = new \Twig\Loader\FilesystemLoader('../templates');
 // initialiser l'environnement de Twig et définir le dossier du cache
 $twig = new \Twig\Environment($loader, [
 'cache' => '../cache',
